@@ -7,11 +7,11 @@ accordion.addEventListener("click", function (e) {
 
   this.querySelectorAll(".block").forEach((block) => {
     if (block === btn.closest(".block")) return;
-    block.classList.add("hidden");
+    block.classList.add("closed");
     block.querySelector(".block__content").style.maxHeight = null;
   });
 
-  btn.closest(".block").classList.toggle("hidden");
+  btn.closest(".block").classList.toggle("closed");
   if (blockContent.style.maxHeight) {
     blockContent.style.maxHeight = null;
   } else {
