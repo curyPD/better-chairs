@@ -1,6 +1,6 @@
 const btnsOpenModal = document.querySelectorAll(".btn--open-modal");
 const modal = document.querySelector(".modal-window");
-const overlay = document.querySelector(".overlay");
+export const overlay = document.querySelector(".overlay");
 
 const form = document.querySelector(".form");
 const btnNextStep = document.querySelector(".form__btn-next-step");

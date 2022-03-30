@@ -19,14 +19,43 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Better Chairs</title>
 
     <script defer type="module" src="js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header sticky">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#features" class="mobile-nav__link" data-section="features"
+              >Features</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a
+              href="#testimonials"
+              class="mobile-nav__link"
+              data-section="testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#products" class="mobile-nav__link" data-section="products"
+              >Products</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#faq" class="mobile-nav__link" data-section="faq">FAQ</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link btn--open-modal">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
         <nav class="nav">
           <div class="logo-box margin-right-auto">
@@ -67,6 +96,11 @@
               </button>
             </li>
           </ul>
+          <div class="mobile-nav-box">
+            <button class="btn--mobile-nav">
+              <div class="hamburger-layer"></div>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -74,8 +108,7 @@
       <div class="container grid grid--2-cols">
         <div class="hero__content-box">
           <h1 class="heading-primary">
-            We design and build <span class="better">better chairs</span>, for a
-            <span class="better">better life</span>
+            We design and build better chairs, for a better life
           </h1>
 
           <p class="hero__text">
@@ -118,14 +151,14 @@
           </svg>
 
           <p class="feature__heading">Eco-friendly materials</p>
-          <p class="feature__text">
+          <!-- <p class="feature__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
             ex explicabo non eius! Est, repellat mollitia.
-          </p>
-          <!-- <p class="feature__text">
-            We care about the nature, so we only use materials that are easy to
-            recycle and use to make new chairs!
           </p> -->
+          <p class="feature__text">
+            We care about the nature, so we only use materials that are easy to
+            recycle and use to make new furniture
+          </p>
         </div>
         <div class="feature">
           <svg
@@ -144,6 +177,10 @@
           </svg>
 
           <p class="feature__heading">Focused on your health</p>
+          <!-- <p class="feature__text">
+            Our chairs are a mix of beauty and ergonomics, so you you enjoy
+            every moment of using them
+          </p> -->
           <p class="feature__text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nemo
             architecto voluptate reprehenderit.
@@ -165,6 +202,10 @@
             />
           </svg>
           <p class="feature__heading">Lovingly hand-crafted</p>
+          <!-- <p class="feature__text">
+            All our chairs are hand-made right here at our workshop, so the
+            quality is always at the highest level
+          </p> -->
           <p class="feature__text">
             Deleniti recusandae quidem nesciunt, eos dolorum iure, quaerat omnis
             est laudantium voluptatem voluptas!

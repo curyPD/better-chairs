@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+export const header = document.querySelector(".header");
 const heroSection = document.querySelector(".hero");
 
 const options = {
@@ -16,4 +16,4 @@ const callback = function (entries, observer) {
 
 const observer = new IntersectionObserver(callback, options);
 
-observer.observe(heroSection);
+// observer.observe(heroSection);

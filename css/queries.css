@@ -1,0 +1,40 @@
+@media (max-width: 68.75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 96rem;
+    padding: 0 2.4rem;
+  }
+
+  .header .container {
+    max-width: 114.4rem;
+  }
+}
+
+@media (max-width: 53.75em) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .grid--2-cols {
+    gap: 3.2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+  }
+}
