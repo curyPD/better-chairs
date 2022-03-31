@@ -15,11 +15,17 @@
 
 @media (max-width: 53.75em) {
   .heading-primary {
-    font-size: 3.6rem;
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
   }
 
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero__text {
+    font-size: 1.6rem;
   }
 
   .grid--2-cols {
@@ -30,11 +36,163 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav__list {
+  .header .nav__list {
     display: none;
   }
 
   .btn--mobile-nav {
     display: block;
+  }
+
+  .carousel {
+    width: 85%;
+  }
+
+  .testimonial__text {
+    font-size: 2rem;
+  }
+
+  .product__content {
+    padding: 4.8rem;
+    padding-top: 3.2rem;
+  }
+
+  .modal-window {
+    width: 95%;
+    padding: 2.4rem 3.2rem;
+  }
+
+  .form {
+    grid-template-columns: 35% calc(65% - 0.2rem * 2) 35% calc(65% - 0.2rem * 2);
+  }
+
+  .label {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 3.2rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero .container {
+    padding: 0 8rem;
+  }
+
+  .hero .btn--big {
+    display: unset;
+  }
+
+  .hero__img-box {
+    display: none;
+  }
+
+  .features-section {
+    padding: 4.8rem 0 3.2rem;
+  }
+
+  .testimonials-section {
+    padding: 6.4rem 0 3.2rem;
+  }
+
+  .product-section {
+    padding: 6.4rem 0 3.2rem;
+  }
+
+  .faq-section {
+    padding: 6.4rem 0 3.2rem;
+  }
+
+  .cta-section {
+    padding: 8rem 0 8rem 0;
+  }
+
+  .product-section .grid--3-cols > * {
+    width: 60%;
+  }
+
+  .block__number,
+  .block__heading {
+    font-size: 2rem;
+  }
+
+  .product__content {
+    padding: 3.2rem;
+    padding-top: 2.4rem;
+  }
+
+  .carousel {
+    width: 95%;
+  }
+
+  .testimonial {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .testimonial::before {
+    top: -5%;
+  }
+
+  .testimonial__text {
+    font-size: 1.8rem;
+  }
+
+  .testimonial__img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .hero .container {
+    padding: 0 3.2rem;
+  }
+
+  .heading-primary {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero__text {
+    margin-bottom: 3.2rem;
+  }
+
+  .product-section .grid--3-cols > * {
+    width: 80%;
+  }
+
+  .block {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .block__number,
+  .block__heading {
+    font-size: 1.6rem;
+  }
+
+  .block__text {
+    font-size: 1.4rem;
   }
 }

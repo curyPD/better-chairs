@@ -1,5 +1,5 @@
 const btnsOpenModal = document.querySelectorAll(".btn--open-modal");
-const modal = document.querySelector(".modal-window");
+export const modal = document.querySelector(".modal-window");
 export const overlay = document.querySelector(".overlay");
 
 const form = document.querySelector(".form");

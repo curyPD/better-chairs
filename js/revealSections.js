@@ -16,7 +16,10 @@ const callback = function (entries, observer) {
 
 const observer = new IntersectionObserver(callback, options);
 
-sections.forEach((section) => {
-  if (section.getAttribute("id") === "hero") return;
-  observer.observe(section);
-});
+if (window.innerWidth > 600) {
+  sections.forEach((section) => {
+    if (section.getAttribute("id") === "hero") return;
+    section.classList.add("unrevealed");
+    observer.observe(section);
+  });
+}

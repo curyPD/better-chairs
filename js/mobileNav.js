@@ -1,5 +1,6 @@
 import { header } from "./stickyHeader.js";
 import { overlay } from "./modal.js";
+import { modal } from "./modal.js";
 
 const btnOpenNav = document.querySelector(".btn--mobile-nav");
 const mobileNav = document.querySelector(".mobile-nav");
@@ -15,6 +16,7 @@ const openMobileNav = function () {
   document.body.classList.add("mobile-nav--opened");
   this.classList.add("hamburger-open");
   overlay.classList.remove("hidden");
+  modal.classList.add("hidden");
 
   mobileNav.style.transform = `translateY(${
     header.getBoundingClientRect().height
