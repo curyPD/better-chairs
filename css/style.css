@@ -478,7 +478,7 @@ section {
   left: 0;
   z-index: 901;
   background-color: #fff;
-  padding: 0 6.4rem;
+  padding: 0 4.8rem 0 2.4rem;
 
   transition: all 0.5s ease-out;
 }
@@ -488,15 +488,17 @@ section {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  gap: 4.8rem;
+  padding-top: 4.8rem;
 }
 
 .mobile-nav__link:link,
 .mobile-nav__link:visited {
   text-decoration: none;
   color: var(--grey-color-light-1);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* ------------------------ */
@@ -867,6 +869,7 @@ section {
 
 .copyright {
   font-size: 1.4rem;
+  line-height: 1.4;
   color: var(--grey-color-light-1);
   text-align: center;
 }

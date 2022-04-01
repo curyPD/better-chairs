@@ -49,10 +49,15 @@ mobileNavLinks.forEach((link) => {
   link.addEventListener("click", closeMobileNav.bind(btnOpenNav));
 });
 
-mobileNav.style.height = `${
-  window.innerHeight - header.getBoundingClientRect().height
-}px`;
+const setMobileNavHeight = function () {
+  mobileNav.style.height = `${window.innerHeight}px`;
+};
+setMobileNavHeight();
 
 mobileNav.style.transform = `translateY(${
   header.getBoundingClientRect().height
 }px) translateX(-100%)`;
+
+if (window.innerWidth <= 860) {
+  window.addEventListener("resize", setMobileNavHeight);
+}
