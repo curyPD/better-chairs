@@ -745,13 +745,14 @@
       </div>
       <h3 class="heading-tertiary">Get in touch!</h3>
       <div class="form-box">
-        <form class="form" action="#">
+        <form class="form" name="contact" netlify>
           <label for="input-first-name" class="label">First name</label>
           <input
             required
             type="text"
             id="input-first-name"
             class="input-field"
+            name="first name"
           />
           <label for="textarea" class="label">Your message</label>
           <textarea
@@ -760,6 +761,7 @@
             cols=""
             rows=""
             class="textarea"
+            name="message"
           ></textarea>
           <label for="input-last-name" class="label">Last name</label>
           <input
@@ -767,9 +769,16 @@
             type="text"
             id="input-last-name"
             class="input-field"
+            name="last name"
           />
           <label for="input-email" class="label">Email</label>
-          <input required type="email" id="input-email" class="input-field" />
+          <input
+            required
+            type="email"
+            id="input-email"
+            name="email"
+            class="input-field"
+          />
           <button class="btn btn--text form__btn-next-step">
             <span>Next step</span>
             <svg

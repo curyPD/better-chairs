@@ -37,3 +37,9 @@ btnBack.addEventListener("click", function (e) {
   form.style.transform = `translateX(0)`;
   this.blur();
 });
+
+form.querySelectorAll(".input-field").forEach((inputField) => {
+  inputField.addEventListener("invalid", function () {
+    form.style.transform = `translateX(0)`;
+  });
+});
